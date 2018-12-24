@@ -27,8 +27,9 @@ def changeAllXMLFiles(folder, tags, values):
     if(file.endswith('.xml')):
       alterXML(tags, values, os.path.join(folder, file))
 
+# Tags needed to be changed
+tags = []
+# Values to change the above tags to
+values = []
 
-tags = ['state_cd', 'fac_id']
-values = ['NV', 'NVS597S']
-
-changeAllXMLFiles('/home/runner/xmls', tags, values)
+changeAllXMLFiles('path/to/folder', tags, values)
